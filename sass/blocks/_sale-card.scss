@@ -1,0 +1,56 @@
+.sale-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 20px 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.15);
+  border-radius: 5px;
+  text-align: center;
+}
+.sale-card__title {
+  margin-bottom: auto;
+  min-height: 94px;
+  font-weight: 500;
+  font-size: 18px;
+  color: $bg-color;
+}
+.sale-card__content {
+  margin: 10px 0 20px;
+  width: 100%;
+}
+.sale-card__price {
+  margin-bottom: 10px;
+  padding:  5px;
+  background-color: $title-color;
+  font-weight: 500;
+  color: #fff;
+}
+.sale-card__img {
+  margin: 0 auto;
+  height: 200px;
+}
+.sale-card__btns {
+  margin-top: auto;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  color: $body-color;
+
+  .button {
+    display: block;
+    height: 40px;
+    line-height: 42px;
+  }
+}
+.sale-card__more.button {
+  padding-left: 20px;
+  background-color: $base-color;
+
+  &::before {
+    content: none;
+  }
+}
+.sale-card__more:hover {
+  background-color: #7a7a7a;
+}

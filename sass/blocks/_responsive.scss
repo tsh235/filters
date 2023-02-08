@@ -1,0 +1,319 @@
+@media (max-width: 1199px) {
+  .container {
+    max-width: 1024px;
+  }
+  h1,
+  .h1 {
+    font-size: 1.5em;
+  }
+  h2,
+  .h2 {
+    font-size: 20px;
+  }
+  h3,
+  .h3 {
+    font-size: 18px;
+  }
+  h4,
+  .h4 {
+    font-size: 16px;
+  }
+  .intro {
+    min-height: unset;
+  }
+  .intro__content .h1 {
+    margin-bottom: 30px;
+  }
+  .intro__list-item {
+    padding-left: 36px;
+    background-size: 26px;
+  }
+  .intro__list-item {
+    font-size: 20px;
+  }
+  .about {
+    padding: 50px 0 30px;
+  }
+  .about__foto {
+    width: 320px;
+    height: 320px;
+  }
+  .about__content {
+    max-width: 600px;
+  }
+  .about__content-text {
+    font-size: 16px;
+  }
+  .services {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .service-card {
+    width: 230px;
+    padding: 30px 20px;
+  }
+  .section-swiper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+// *******************************
+@media (max-width: 1023px) {
+  .container {
+    max-width: 900px;
+  }
+  h3,
+  .h3 {
+    font-size: 0.9em;
+  }
+  .header__top-logo-img {
+    width: 66px;
+    height: 66px;
+  }
+  .header__top-logo-text {
+    font-size: 14px;
+  }
+  .header__top-logo-name,
+  .header__top-time {
+    font-size: 16px;
+  }
+  .header__top-phone {
+    font-size: 18px;
+  }
+  .header__top-contacts {
+    margin-right: 20px;
+  }
+  .button {
+    font-size: 12px;
+  }
+  .intro {
+    padding: 40px 0;
+  }
+  .intro__list-item {
+    font-size: 1em;
+  }
+  .intro__list-col > * + * {
+    margin-top: 10px;
+  }
+  .intro__list-item {
+    padding-left: 34px;
+    background-size: 24px;
+  }
+  .intro__waranty-text {
+    font-size: 0.9em;
+  }
+  .intro__waranty-img {
+    width: 80px;
+    height: 80px;
+  }
+  .about__foto {
+    width: 290px;
+    height: 290px;
+  }
+  .about__content {
+    max-width: 60%;
+  }
+  .services__wrapper {
+    justify-content: center;
+    gap: 20px;
+  }
+  .service-card {
+    width: 35%;
+    padding: 30px 30px;
+  }
+  .benefit-card img {
+    margin: 0 auto 10px;
+    width: 80px;
+    height: 65px;
+  }
+  .benefits {
+    padding: 40px 0;
+  }
+  .benefit-card {
+    width: 180px;
+  }
+}
+
+// *******************************
+@media (max-width: 899px) {
+  .container {
+    max-width: 768px;
+  }
+  .header__top-row {
+    flex-wrap: wrap;
+  }
+  .header__top-logo {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .header__top-logo-name,
+  .header__top-time {
+    font-size: 14px;
+  }
+  .header__top-logo-img {
+    width: 40px;
+    height: 40px;
+  }
+  .header__top-phone {
+    font-size: 16px;
+  }
+  .header__top-contact-wrap {
+    margin: 20px 0 0;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .header__top-contacts {
+    align-items: flex-start;
+  }
+  .intro__row {
+    align-items: flex-end;
+  }
+  .intro__list {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+  .intro__list-col {
+    width: 100%;
+  }
+  .intro__list-item {
+    font-size: 0.9em;
+  }
+  .about__foto {
+    align-self: self-start
+    ;
+    width: 250px;
+    height: 250px;
+  }
+  .about__content {
+    max-width: 60%;
+  }
+  .service-card {
+    width: 40%;
+  }
+}
+
+// *******************************
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+  }
+  .about__row {
+    flex-wrap: wrap;
+  }
+  .about__foto {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+  }
+  .about__content {
+    max-width: 100%;
+  }
+  .service-card {
+    width: 45%;
+  }
+  .benefits__row {
+    justify-content: center;
+    gap: 20px;
+  }
+  .benefit-card {
+    width: 40%;
+    margin: 15px;
+  }
+  .section-swiper {
+    padding-bottom: 20px;
+  }
+  .footer__row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .footer__copyright {
+    text-align: center;
+  }
+  .footer__button {
+    margin-bottom: 20px;
+  }
+}
+
+// *******************************
+@media (max-width: 567px) {
+  h1,
+  .h1 {
+    font-size: 1.45em;
+  }
+  .intro__row {
+    flex-wrap: wrap;
+  }
+  .intro__content .h1 {
+    margin-bottom: 20px;
+  }
+  .intro__waranty {
+    margin-top: 20px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+  .intro__waranty-img {
+    margin: 0 10px 0 0;
+    width: 50px;
+    height: 50px;
+  }
+  .service-card {
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 479px) {
+  .section-swiper .swiper {
+    width: 100%;
+    padding: 0;
+  }
+}
+// *******************************
+@media (max-width: 428px) {
+  .header__top-logo-name, .header__top-time {
+    font-size: 12px;
+  }
+  .benefit-card {
+    width: 100%;
+  }
+  .button--desk {
+    display: none;
+  }
+  .button--mob {
+    display: block;
+  }
+  .service-card {
+    width: 75%;
+  }
+}
+@media (max-width: 389px) {
+  .service-card {
+    width: 100%;
+  }
+  .button.button--mob {
+    height: 40px;
+    padding-left: 35px;
+    padding-right: 10px;
+    line-height: 40px;
+  }
+  .header__top-button .button::before {
+    width: 24px;
+    height: 24px;
+    left: 10px;
+  }
+}
+@media (max-width: 379px) {
+  h1,
+  .h1 {
+    font-size: 1.4em;
+  }
+}
+@media (max-width: 339px) {
+  .header__top-phone {
+    padding-left: 0;
+  }
+  .header__top-phone::before {
+    display: none;
+  }
+}

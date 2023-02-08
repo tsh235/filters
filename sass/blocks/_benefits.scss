@@ -1,0 +1,33 @@
+.benefits {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url('./../img/benefits-bg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.benefits__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.benefit-card {
+    width: 270px;
+    text-align: center;
+
+    img {
+        margin: 0 auto 20px;
+        width: 97px;
+        height: 80px;
+        object-fit: contain;
+        object-position: center;
+    }
+}

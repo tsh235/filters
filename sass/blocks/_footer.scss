@@ -1,0 +1,27 @@
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #025484;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    margin-bottom: 10px;
+}
+
+.footer__copyright {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+
+    & p + p {
+        margin-top: 10px;
+    }
+}
+
+.footer__button {
+    color: #fff;
+}

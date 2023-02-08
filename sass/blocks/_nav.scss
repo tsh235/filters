@@ -1,0 +1,30 @@
+.nav {
+  position: relative;
+  padding: 5px 0;
+}
+.nav__list {
+  display: flex;
+  justify-content: center;
+}
+.nav__item {
+  padding: 0 30px;
+}
+.nav__item:not(:last-child) {
+  border-right: 1px solid rgba(86, 86, 86, 0.2);
+}
+.nav__link {
+  padding: 5px 0;
+  font-size: 16px;
+  transition: 0.3s;
+
+  &.nav__link--active {
+    color: $accent-color;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &:hover {
+    color: $accent-color-hover;
+  }
+
+}

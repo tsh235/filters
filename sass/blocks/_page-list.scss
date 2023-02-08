@@ -1,0 +1,32 @@
+.page-list {
+	list-style-type: none; 
+	counter-reset: num;
+	> * + * {
+		margin-top: 40px;
+	}
+}
+.page-list__item {
+	position: relative;	
+  padding-left: 58px;
+}
+.page-list__item:before {
+	content: counter(num); 
+	counter-increment: num;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	background: $accent-color;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+}
+.page-list__item-title {
+  display: block;
+  margin-bottom: 30px;
+  font-weight: 500;
+  color: $header-color;
+}
