@@ -26,6 +26,12 @@
         }
     }
 }
+@media (max-width: 479px) {
+    .section-swiper .swiper {
+      width: 100%;
+      padding: 0;
+    }
+}
 .section-swiper__wrapper {
     max-width: 1170px;
 }

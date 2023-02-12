@@ -56,6 +56,36 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .sale {
+    grid-template-columns: repeat(auto-fill, 310px);
+  }
+  .sale-card__more.button, .sale-card__wa.button {
+    font-size: 12px;
+  }
+  .description {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+  .description .section-title {
+    margin-bottom: 20px;
+  }
+  .description__price {
+    margin-bottom: 30px;
+    padding: 5px 20px;
+    font-size: 20px;
+  }
+  .page-grid--2 {
+    grid-template-columns: repeat(auto-fill, 48%);
+  }
+  .page-grid--4 {
+    grid-template-columns: repeat(auto-fill, 23%);
+  }
+  .page-grid--5 {
+    grid-template-columns: repeat(auto-fill, 18%);
+  }
+  .page-card__title {
+    font-size: 18px;
+  }
 }
 
 // *******************************
@@ -133,6 +163,18 @@
   .benefit-card {
     width: 180px;
   }
+  .sale {
+    grid-template-columns: repeat(auto-fill, 275px);
+  }
+  .sale-card {
+    padding: 20px 10px;
+  }
+  .sale-card__title, .sale-card__price {
+    font-size: 16px;
+  }
+  .sale-card__btns {
+    gap: 10px;
+  }
 }
 
 // *******************************
@@ -191,6 +233,29 @@
   .service-card {
     width: 40%;
   }
+  .sale {
+    grid-template-columns: repeat(auto-fill, 330px);
+    justify-content: center;
+    gap: 30px;
+  }
+  .description__scheme-img {
+    height: 300px;
+  }
+  .page-grid--4 {
+    grid-template-columns: repeat(auto-fill, 31%);
+  }
+  .page-grid--5 {
+    grid-template-columns: repeat(auto-fill, 22%);
+  }
+  .page-card__title {
+    font-size: 16px;
+  }
+  .page-list__item {
+    padding-left: 50px;
+  }
+  .page-list__item-title {
+    margin-bottom: 20px;
+  }
 }
 
 // *******************************
@@ -233,10 +298,62 @@
   .footer__button {
     margin-bottom: 20px;
   }
+  .sale {
+    grid-template-columns: repeat(auto-fill, 290px);
+  }
+}
+
+// *******************************
+@media (max-width: 650px) { 
+  .description__price {
+    margin-bottom: 20px;
+  }
+  .description__scheme-img {
+    height: 280px;
+  }
+  .page-grid--4, .page-grid--5 {
+    grid-template-columns: repeat(auto-fill, 48%);
+  }
+  .page-card__img--200 {
+    height: 180px;
+  }
+}
+
+// *******************************
+@media (max-width: 639px) {
+  .sale {
+    grid-template-columns: repeat(auto-fill, 270px);
+  }
+}
+@media (max-width: 599px) { 
+  .sale {
+    grid-template-columns: repeat(auto-fill, 350px);
+  }
+}
+
+@media (max-width: 579px) {
+  .page-list__item {
+    padding-left: 40px;
+  }
+  .page-list__item::before {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+  .page-list__item-title {
+    font-size: 16px;
+  }
+  .page-grid--2, .page-grid--4, .page-grid--5 {
+    grid-template-columns: repeat(auto-fill, 45%);
+  }
 }
 
 // *******************************
 @media (max-width: 567px) {
+  .nav__link {
+    font-size: 14px;
+  }
   h1,
   .h1 {
     font-size: 1.45em;
@@ -263,12 +380,32 @@
     padding: 30px 20px;
   }
 }
-@media (max-width: 479px) {
-  .section-swiper .swiper {
-    width: 100%;
-    padding: 0;
+
+// *******************************
+@media (max-width: 480px) {
+  .nav__item:first-child {
+    padding-left: 0;
+  }
+  .nav__item:last-child {
+    padding-right: 0;
+  }
+  .sale {
+    grid-template-columns: repeat(auto-fill, 290px);
+  }
+  .sale-card__title {
+    min-height: 80px;
+  }
+  .sale-card__content {
+    margin-bottom: 10px;
+  }
+  .description__list-text, .description__list-item {
+    font-size: 16px;
+  }
+  .page-card__text {
+    font-size: 14px;
   }
 }
+
 // *******************************
 @media (max-width: 428px) {
   .header__top-logo-name, .header__top-time {
@@ -285,6 +422,12 @@
   }
   .service-card {
     width: 75%;
+  }
+  .description__scheme-img {
+    height: 210px;
+  }
+  .page-grid--2, .page-grid--4, .page-grid--5 {
+    grid-template-columns: 90%;
   }
 }
 @media (max-width: 389px) {
@@ -308,6 +451,10 @@
   .h1 {
     font-size: 1.4em;
   }
+  .about__foto {
+    width: 100%;
+    height: 290px;
+  }
 }
 @media (max-width: 339px) {
   .header__top-phone {
@@ -315,5 +462,8 @@
   }
   .header__top-phone::before {
     display: none;
+  }
+  .page-grid--2, .page-grid--4, .page-grid--5 {
+    grid-template-columns: 100%;
   }
 }

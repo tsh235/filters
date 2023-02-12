@@ -1,6 +1,7 @@
 .nav {
   position: relative;
   padding: 5px 0;
+  background-color: $bg-color;
 }
 .nav__list {
   display: flex;
@@ -8,9 +9,13 @@
 }
 .nav__item {
   padding: 0 30px;
+  flex-basis: 50%;
 }
 .nav__item:not(:last-child) {
-  border-right: 1px solid rgba(86, 86, 86, 0.2);
+  border-right: 1px solid $body-color;
+}
+a.nav__link {
+  color: $body-color;
 }
 .nav__link {
   padding: 5px 0;
@@ -26,5 +31,4 @@
   &:hover {
     color: $accent-color-hover;
   }
-
 }
