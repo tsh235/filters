@@ -514,6 +514,36 @@ a.nav__link {
   margin-top: 10px;
 }
 
+.social-wrap {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.social {
+  display: inline-block;
+  margin-left: 10px;
+  height: 40px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+.social:hover {
+  opacity: 0.7;
+}
+
+.social--wa {
+  width: 40px;
+  background-image: url(./../img/icons/whatsapp.svg);
+}
+
+.social--avito {
+  width: 100px;
+  background-image: url(./../img/icons/avito.svg);
+}
+
 .services {
   padding-top: 45px;
   padding-bottom: 90px;
