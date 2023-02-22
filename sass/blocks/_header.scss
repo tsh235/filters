@@ -17,7 +17,11 @@
 .header__top-logo {
     display: flex;
     align-items: center;
-    max-width: 380px;
+    max-width: fit-content;
+}
+.header__top-logo.header__top-logo--index {
+    cursor: default;
+    pointer-events: none;
 }
 .header__top-logo-img {
     margin-right: 5px;
@@ -46,18 +50,15 @@
     align-items: flex-end;
     margin-right: 40px;
 }
-.header__top-phone {
+.header__top-phone, .header__top-email {
     position: relative;
-    padding-left: 30px;
-    margin-bottom: 5px;
+    padding-left: 25px;
     font-weight: 700;
     font-size: 20px;
     transition: 0.3s;
-
     &:hover {
         color: $accent-color;
     }
-
     &::before {
         content: '';
         position: absolute;
@@ -68,6 +69,18 @@
         height: 20px;
         background-image: url('./../img/icons/phone.svg');
         background-size: cover;
+    }
+}
+.header__top-phone {
+    margin-bottom: 5px;
+    &::before {
+        background-image: url('./../img/icons/phone.svg');
+    }
+}
+.header__top-email {
+    margin-top: 5px;
+    &::before {
+        background-image: url('./../img/icons/email.svg');
     }
 }
 .header__top-button {

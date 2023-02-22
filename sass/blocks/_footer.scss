@@ -22,6 +22,25 @@
     }
 }
 
-.footer__button {
+a.footer__button {
     color: #fff;
+}
+.social-wrap {
+    color: #fff;
+    text-align: center;
+}
+.social {
+    display: block;
+    height: 40px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+.social--avito {
+    width: 100px;
+    background-image: url(./../img/icons/avito.svg);
 }

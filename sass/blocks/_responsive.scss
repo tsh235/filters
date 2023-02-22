@@ -59,12 +59,8 @@
   .sale {
     grid-template-columns: repeat(auto-fill, 310px);
   }
-  .sale-card__more.button, .sale-card__wa.button {
+  .sale .sale-card__more.button, .sale .sale-card__wa.button {
     font-size: 12px;
-  }
-  .description {
-    padding-top: 40px;
-    padding-bottom: 0;
   }
   .description .section-title {
     margin-bottom: 20px;
@@ -106,10 +102,13 @@
   }
   .header__top-logo-name,
   .header__top-time {
-    font-size: 16px;
+    font-size: 14px;
   }
   .header__top-phone {
     font-size: 18px;
+  }
+  .header__top-email {
+    font-size: 16px;
   }
   .header__top-contacts {
     margin-right: 20px;
@@ -197,7 +196,7 @@
     width: 40px;
     height: 40px;
   }
-  .header__top-phone {
+  .header__top-phone, .header__top-email {
     font-size: 16px;
   }
   .header__top-contact-wrap {
@@ -288,12 +287,18 @@
   .section-swiper {
     padding-bottom: 20px;
   }
+  .description .sale-card__wa.button {
+    font-size: 16px;
+  }
   .footer__row {
     flex-direction: column-reverse;
     align-items: center;
   }
   .footer__copyright {
     text-align: center;
+  }
+  .social-wrap {
+    margin-bottom: 20px;
   }
   .footer__button {
     margin-bottom: 20px;
@@ -383,6 +388,12 @@
 
 // *******************************
 @media (max-width: 480px) {
+  .button--desk {
+    display: none;
+  }
+  .button--mob {
+    display: block;
+  }
   .nav__item:first-child {
     padding-left: 0;
   }
@@ -411,14 +422,14 @@
   .header__top-logo-name, .header__top-time {
     font-size: 12px;
   }
+  .header__top-phone, .header__top-email {
+    padding-left: 0;
+    &::before {
+      display: none;
+    }
+  }
   .benefit-card {
     width: 100%;
-  }
-  .button--desk {
-    display: none;
-  }
-  .button--mob {
-    display: block;
   }
   .service-card {
     width: 75%;
@@ -457,12 +468,6 @@
   }
 }
 @media (max-width: 339px) {
-  .header__top-phone {
-    padding-left: 0;
-  }
-  .header__top-phone::before {
-    display: none;
-  }
   .page-grid--2, .page-grid--4, .page-grid--5 {
     grid-template-columns: 100%;
   }
