@@ -1555,6 +1555,10 @@ a.footer__button {
     max-width: 100%;
   }
 
+  .header__nav .container {
+    padding: 0;
+  }
+
   .about__row {
     flex-wrap: wrap;
   }
@@ -1708,14 +1712,6 @@ a.footer__button {
 
   .button--mob {
     display: block;
-  }
-
-  .nav__item:first-child {
-    padding-left: 0;
-  }
-
-  .nav__item:last-child {
-    padding-right: 0;
   }
 
   .sale {

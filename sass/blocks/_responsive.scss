@@ -262,6 +262,9 @@
   .container {
     max-width: 100%;
   }
+  .header__nav .container {
+    padding: 0;
+  }
   .about__row {
     flex-wrap: wrap;
   }
@@ -393,12 +396,6 @@
   }
   .button--mob {
     display: block;
-  }
-  .nav__item:first-child {
-    padding-left: 0;
-  }
-  .nav__item:last-child {
-    padding-right: 0;
   }
   .sale {
     grid-template-columns: repeat(auto-fill, 290px);
